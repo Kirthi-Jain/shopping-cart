@@ -19,16 +19,17 @@ export default () => {
       setCounters[index].value++
       setCounter(setCounters);
   }
+  
   return (
    <Fragment>
      <Navbar totalCounters = {counters.filter(({value}) => value).length}/>
-       <main className='container'>
+       <main className ='container'>
          <Counters 
          onDelete = {handleDelete} 
          onReset = {handleReset}
          onIncrement = {handleIncrement}
          counters = {counters}
-        />
+       />
        </main>
    </Fragment>
   );
