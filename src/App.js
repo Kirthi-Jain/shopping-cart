@@ -28,7 +28,7 @@ export default () => {
          onReset = {handleReset}
          onIncrement = {handleIncrement}
          counters = {counters}
-         />
+        />
        </main>
    </Fragment>
   );
